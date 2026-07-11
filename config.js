@@ -1,45 +1,79 @@
 // ==========================================
-// CONFIGURAÇÃO DO SITE MBWAY - WHITE LABEL
+// CONFIGURAÇÃO DO SITE MB WAY - POLLYANA FÉLIX ESTÉTICA
+// Repositório: https://polylab3d.github.io/pfestetica/
 // ==========================================
-// Edite apenas este arquivo para personalizar o site para cada cliente
+// Esta página utiliza a index base da PolyLAB 3D.
 
 const CONFIG = {
-  // Informações do Negócio
+  // Informações do negócio
   business: {
-    name: 'Pollyana Félix Estética',           // Ex: "Nails Designer"
-    logoFile: 'logo.svg',               // Nome do arquivo do logo (deve estar na mesma pasta)
+    name: 'Pollyana Félix Estética',
+    logoFile: 'logo.svg',
   },
 
-  // Número MBWay
+  // Número MB WAY
   mbway: {
-    phoneDisplay: '+351 966 737 128',        // Formato visual (com espaços)
-    phoneValue: '966737128',            // Número real (sem espaços, será copiado)
+    phoneDisplay: '+351 966 737 128',
+    phoneValue: '966737128',
   },
 
-  // Cores e Estilo
+  // Tema visual inspirado na identidade dourada da cliente
   theme: {
-  primaryColor: '#B08A2E',
-  primaryColorHover: '#8F6E20',
-  backgroundColor: '#F5F0E6',
-  cardBackground: '#FFFDF9',
-  cardShadow: '0 8px 28px rgba(90, 68, 20, 0.10)',
+    // Fundo geral da página
+    'background-color':
+      'linear-gradient(180deg, #F7F2E8 0%, #EEE6D7 100%)',
+
+    // Card principal
+    'card-background': '#FFFDF9',
+
+    // Sombra do card
+    'card-shadow': '0 12px 36px rgba(90, 68, 20, 0.13)',
+
+    // Cor principal do número MB WAY
+    'text-color': '#29241C',
+
+    // Cor do texto "Número MB WAY"
+    'text-secondary': '#8F7130',
+
+    // Cor das instruções e do rodapé
+    'text-muted': 'rgba(90, 76, 49, 0.68)',
+
+    // Cor da linha divisória
+    'divider-color': 'rgba(176, 138, 46, 0.18)',
+
+    // Cor principal dos botões
+    'link-bg': '#B08A2E',
+
+    // Cor dos botões ao clicar ou passar o rato
+    'link-hover-bg': '#8F6E20',
+
+    // Cor do texto e dos ícones dos botões
+    'link-text': '#FFFFFF',
   },
 
-  // Textos Customizáveis
+  // Textos da página
   text: {
-    pageTitle: 'Pagamento MBWay',       // Título da aba do navegador
-    label: 'Número MBWay',              // Texto acima do número
-    buttonText: 'Copiar e Abrir MB WAY', // Texto do botão
-    successMessage: '✓ Copiado! A abrir MB WAY...', // Mensagem de sucesso
-    errorMessage: 'Erro ao copiar. Seleciona o número manualmente.', // Mensagem de erro
+    pageTitle: 'Pagamento MB WAY',
 
-    // Instruções
-    step1: 'Clica no botão',
-    step2: 'No MB WAY → cola o número',
+    label: 'Número MB WAY',
+
+    buttonText: 'Copiar número',
+
+    openButtonText: 'Abrir MB WAY agora',
+
+    successMessage:
+      '✓ Número copiado! Agora toque em "Abrir MB WAY agora".',
+
+    errorMessage:
+      'Erro ao copiar. Seleciona o número manualmente.',
+
+    step1: 'Clica no botão para copiar o número',
+
+    step2: 'No MB WAY, cola o número',
   },
 
-
+  // Rodapé
   footer: {
-    text: '© 2026 PolyLAB 3D - Todos os direitos reservados'
+    text: '© 2026 PolyLAB 3D - Todos os direitos reservados',
   },
 };
